@@ -1,3 +1,22 @@
-h1 {
-    color: blue;
+.board {
+    display: grid;
+    grid-template-rows: repeat(10, 30px);
+}
+.row {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+}
+.cell {
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+}
+.cell.ship {
+    background: lightblue;
+}
+.cell.hit {
+    background: red;
+}
+.cell.miss {
+    background: gray;
 }
